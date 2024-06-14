@@ -5,12 +5,12 @@ In Java, if you have millions of objects in the heap, it causes program to run s
 
 To solve this problem, we can use memory-mapped file. This method create a file channel that allows us to access directly into memory.
 
-Pros: 
+## Pros: 
 - Don't worry anymore about heap or RAM
 - Write and read objects directly to/from memory -> very fast
 - Reduce heap -> faster execution
 
-Cons:
+## Cons:
 - You have to do more work
 - You should consider limited writing cycles of hard drive
 
@@ -23,12 +23,18 @@ Note that in the examples, I create buffer each time writing or reading an objec
 Here is the results on my mac:
 
 - 100.000 objects:
-# Start writing objects to memory
-* Spent time on writing (ms): 918  => 1s
+- 
+Start writing objects to memory
+
+Spent time on writing (ms): 918  => 1s
+
 Last writePosition: 2777780  => 2.8 MB
+
 Spent time on reading (ms): 1050  => 1s
 
+
 - 1.000.000 objects:
+- 
 Start writing objects to memory
 Spent time on writing (ms): 26713  => 27s
 Last writePosition: 29777780  => 30 MB
