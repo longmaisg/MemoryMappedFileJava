@@ -23,7 +23,7 @@ Note that in the examples, I create buffer each time writing or reading an objec
 Here is the results on my mac:
 
 - 100.000 objects:
-* Start writing objects to memory
+# Start writing objects to memory
 * Spent time on writing (ms): 918  => 1s
 Last writePosition: 2777780  => 2.8 MB
 Spent time on reading (ms): 1050  => 1s
